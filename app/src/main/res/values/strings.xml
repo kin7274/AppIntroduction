@@ -7,4 +7,12 @@
     <string name="menu2">2. 버전정보</string>
     <string name="menu3">3. 개발자정보</string>
     <string name="menu4">4. Change log</string>
+
+
+    <!--메뉴 1. 인트로 내용-->
+    <string name="Intro_content">안녕하세요! ‘당뇨그루’는 강원대학교 전자공학전공 E-LAB 연구실에서 차세대 당뇨 자기관리 연구를 위한 당뇨 자기관리 프로젝트입니다.
+</string>
+
+    <!--임시 : 최신입니다.-->
+    <string name="update_good">현재 버전은 최신입니다.</string>
 </resources>

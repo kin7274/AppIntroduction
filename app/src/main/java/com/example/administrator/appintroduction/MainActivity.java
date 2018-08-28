@@ -46,13 +46,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.menu2:
                 // 2번 메뉴 : 앱버전 정보
-                // 다이얼로그
+                // 커스텀 다이얼로그
                 Toast.makeText(this, "2번 메뉴 클릭", Toast.LENGTH_LONG).show();
                 break;
             case R.id.menu3:
                 // 3번 메뉴 : 개발자 정보
                 // 리사이클러뷰
-                // 어댑터 형식을 생각하자!
+                // 뷰홀더 형식을 생각하자!
                 Toast.makeText(this, "3번 메뉴 클릭", Toast.LENGTH_LONG).show();
 
                 break;

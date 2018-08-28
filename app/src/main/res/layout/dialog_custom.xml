@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="버전정보"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:src="@drawable/app_icon_ex"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <!--임시로 "최신입니다."를 넣어두겠습니다.-->
+    <TextView
+        android:text="@string/update_good"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20sp"/>
+</LinearLayout>
