@@ -2,6 +2,8 @@ package com.example.administrator.appintroduction;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     // 메뉴 4개(텍스트뷰) 클릭 이벤트
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP) // dialog.create();
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.menu1:
@@ -47,7 +50,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.menu2:
                 // 2번 메뉴 : 앱버전 정보
                 // 커스텀 다이얼로그
-                Toast.makeText(this, "2번 메뉴 클릭", Toast.LENGTH_LONG).show();
+//                Toast.makeText(this, "2번 메뉴 클릭", Toast.LENGTH_LONG).show();
+                CustomDialog dialog = new CustomDialog(MainActivity.this);
+                dialog.setCanceledOnTouchOutside(true);
+                dialog.setDialogListener(new MyDialogListener() {
+                    @Override
+                    public void onPositiveClicked() {
+                    }
+                });
+                dialog.create();
+                dialog.show();
                 break;
             case R.id.menu3:
                 // 3번 메뉴 : 개발자 정보
