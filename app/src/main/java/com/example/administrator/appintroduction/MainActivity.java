@@ -65,8 +65,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // 3번 메뉴 : 개발자 정보
                 // 리사이클러뷰
                 // 뷰홀더 형식을 생각하자!
-                Toast.makeText(this, "3번 메뉴 클릭", Toast.LENGTH_LONG).show();
-
+//                Toast.makeText(this, "3번 메뉴 클릭", Toast.LENGTH_LONG).show();
+                Intent developer_Intent = new Intent(MainActivity.this, DevelopActivity.class);
+                startActivity(developer_Intent);
                 break;
             case R.id.menu4:
                 // 4번 메뉴 : Change log

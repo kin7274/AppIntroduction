@@ -3,6 +3,10 @@
     <string name="toolbar_text">MAIN</string>
     <string name="ok">확인</string>
 
+    <!--리사이클러뷰-->
+    <string name="name">이 름</string>
+    <string name="grade">학 력</string>
+
     <!--메뉴 4개-->
     <string name="menu1">1. 당뇨그루에 대해</string>
     <string name="menu2">2. 버전정보</string>
