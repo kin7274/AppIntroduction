@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AppIntroduction</string>
+    <string name="toolbar_text">MAIN</string>
+
+    <!--메뉴 4개-->
+    <string name="menu1">1. 당뇨그루에 대해</string>
+    <string name="menu2">2. 버전정보</string>
+    <string name="menu3">3. 개발자정보</string>
+    <string name="menu4">4. Change log</string>
 </resources>
