@@ -10,6 +10,7 @@
     <!--메뉴 4개-->
     <string name="menu1">1. 당뇨그루에 대해</string>
     <string name="menu2">2. 버전정보</string>
+    <string name="menu2_0">버전정보</string>
     <string name="menu3">3. 개발자정보</string>
     <string name="menu4">4. Change log</string>
 
@@ -20,4 +21,26 @@
 
     <!--임시 : 최신입니다.-->
     <string name="update_good">현재 버전은 최신입니다.</string>
+
+    <!--개발자정보-->
+    <!--ex-->
+    <string name="develop_name0">뿡뿡이</string>
+    <string name="develop_grade0">강원대학교 전자공학전공 3학년</string>
+    <string name="develop_email0">abdcdefg123456@daum.net</string>
+    <string name="develop_call0">010-0000–0000</string>
+    <!--1-->
+    <string name="develop_name1">양지훈</string>
+    <string name="develop_grade1">강원대학교 전자공학전공 4학년</string>
+    <string name="develop_email1">kms6742@naver.com</string>
+    <string name="develop_call1">010-5104-7274</string>
+    <!--2-->
+    <string name="develop_name2"></string>
+    <string name="develop_grade2"></string>
+    <string name="develop_email2"></string>
+    <string name="develop_call2"></string>
+    <!--3-->
+    <string name="develop_name3"></string>
+    <string name="develop_grade3"></string>
+    <string name="develop_email3"></string>
+    <string name="develop_call3"></string>
 </resources>

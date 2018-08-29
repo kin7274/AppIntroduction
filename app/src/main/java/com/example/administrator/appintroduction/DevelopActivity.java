@@ -35,8 +35,8 @@ public class DevelopActivity extends AppCompatActivity {
         // dataList.add(new CardItem("이름", "학력", "이메일", "전화번호"));
         // dataList.add(new CardItem("OOO", "강원대학교 전자공학전공 0학년", "oooooo@oooo.ooo", "000-0000-0000"));
         // 양식 준수
-        dataList.add(new CardItem("양지훈", "강원대학교 전자공학전공 4학년", "kms6742@naver.com", "010-5104-7274"));
-        dataList.add(new CardItem("뿡뿡이", "강원대학교 전자공학전공 3학년", "abdcdefg123456@daum.net", "010-0000-0000"));
+        dataList.add(new CardItem(getResources().getString(R.string.develop_name0), getResources().getString(R.string.develop_grade0), getResources().getString(R.string.develop_email0), getResources().getString(R.string.develop_call0)));
+        dataList.add(new CardItem(getResources().getString(R.string.develop_name1), getResources().getString(R.string.develop_grade1), getResources().getString(R.string.develop_email1), getResources().getString(R.string.develop_call1)));
 
         // 어댑터 설정
         mAdapter = new MyRecyclerAdapter(dataList);

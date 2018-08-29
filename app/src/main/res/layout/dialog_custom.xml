@@ -6,7 +6,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="버전정보"
+        android:text="@string/menu2_0"
         android:textColor="#000"
         android:textSize="20sp" />
 
