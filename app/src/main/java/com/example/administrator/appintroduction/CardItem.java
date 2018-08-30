@@ -1,17 +1,19 @@
 package com.example.administrator.appintroduction;
 
 public class CardItem {
-    // 4개 + 이미지 후에
+    // 이미지만 남음
     private String name;
     private String grade;
     private String email;
     private String call;
+    private String assign;
 
-    public CardItem(String name, String grade, String email, String call) {
+    public CardItem(String name, String grade, String email, String call, String assign) {
         this.name = name;
         this.grade = grade;
         this.email = email;
         this.call = call;
+        this.assign = assign;
     }
 
     public String getName(){
@@ -44,5 +46,13 @@ public class CardItem {
 
     public void setCall(String call) {
         this.call = call;
+    }
+
+    public String getAssign() {
+        return assign;
+    }
+
+    public void setAssign(String assign) {
+        this.assign = assign;
     }
 }

@@ -40,11 +40,13 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Vi
         TextView grade = holder.grade;
         TextView email = holder.email;
         TextView call = holder.call;
+        TextView assign = holder.assign;
 
         holder.name.setText(item.getName());
         holder.grade.setText(item.getGrade());
         holder.email.setText(item.getEmail());
         holder.call.setText(item.getCall());
+        holder.assign.setText(item.getAssign());
 
         // 클릭 이벤트
         if (mListener != null) {
@@ -72,7 +74,7 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Vi
     // 반드시 RecyclerView.ViewHolder를 상속해야 함
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView name, grade, email, call;
+        TextView name, grade, email, call, assign;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -80,6 +82,7 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Vi
             grade = ( TextView ) itemView.findViewById(R.id.text_grade);
             email = ( TextView ) itemView.findViewById(R.id.text_email);
             call = ( TextView ) itemView.findViewById(R.id.text_call);
+            assign = ( TextView ) itemView.findViewById(R.id.text_assign);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
