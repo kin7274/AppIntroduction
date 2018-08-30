@@ -6,6 +6,7 @@
     <!--리사이클러뷰-->
     <string name="name">이 름</string>
     <string name="grade">학 력</string>
+    <string name="assign">담 당</string>
 
     <!--메뉴 4개-->
     <string name="menu1">1. 당뇨그루에 대해</string>
@@ -28,19 +29,23 @@
     <string name="develop_grade0">강원대학교 전자공학전공 3학년</string>
     <string name="develop_email0">abdcdefg123456@daum.net</string>
     <string name="develop_call0">010-0000–0000</string>
+    <string name="develop_assign0">총괄</string>
     <!--1-->
     <string name="develop_name1">양지훈</string>
     <string name="develop_grade1">강원대학교 전자공학전공 4학년</string>
     <string name="develop_email1">kms6742@naver.com</string>
     <string name="develop_call1">010-5104-7274</string>
+    <string name="develop_assign1">교육 앱 제작</string>
     <!--2-->
     <string name="develop_name2"></string>
     <string name="develop_grade2"></string>
     <string name="develop_email2"></string>
     <string name="develop_call2"></string>
+    <string name="develop_assign2"></string>
     <!--3-->
     <string name="develop_name3"></string>
     <string name="develop_grade3"></string>
     <string name="develop_email3"></string>
     <string name="develop_call3"></string>
+    <string name="develop_assign3"></string>
 </resources>
