@@ -28,7 +28,7 @@
             android:gravity="center"
             android:text="@string/name"
             android:textColor="#000000"
-            android:textSize="10sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -37,7 +37,7 @@
             android:gravity="center"
             android:text="@string/grade"
             android:textColor="#000000"
-            android:textSize="10sp" />
+            android:textSize="15sp" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -60,7 +60,7 @@
             android:gravity="center"
             android:text="@string/assign"
             android:textColor="#000000"
-            android:textSize="10sp" />
+            android:textSize="15sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -76,7 +76,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:textColor="#000000"
-            android:textSize="10sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/text_grade"
@@ -84,7 +84,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:textColor="#000000"
-            android:textSize="10sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/text_email"
@@ -92,7 +92,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:textColor="#000000"
-            android:textSize="10sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/text_call"
@@ -100,7 +100,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:textColor="#000000"
-            android:textSize="10sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/text_assign"
@@ -108,7 +108,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:textColor="#000000"
-            android:textSize="10sp" />
+            android:textSize="15sp" />
     </LinearLayout>
 </android.support.v7.widget.CardView>
 
