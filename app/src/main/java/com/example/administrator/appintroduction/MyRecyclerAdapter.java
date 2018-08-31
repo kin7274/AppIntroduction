@@ -2,10 +2,12 @@ package com.example.administrator.appintroduction;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.media.Image;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,12 +38,14 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Vi
     public void onBindViewHolder(ViewHolder holder, final int position) {
         CardItem item = mDataList.get(position);
 
+//        ImageView image = holder.image;
         TextView name = holder.name;
         TextView grade = holder.grade;
         TextView email = holder.email;
         TextView call = holder.call;
         TextView assign = holder.assign;
 
+//        holder.image.setImageResource(item.getImage());
         holder.name.setText(item.getName());
         holder.grade.setText(item.getGrade());
         holder.email.setText(item.getEmail());
@@ -74,10 +78,12 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Vi
     // 반드시 RecyclerView.ViewHolder를 상속해야 함
     public class ViewHolder extends RecyclerView.ViewHolder {
 
+//        ImageView image;
         TextView name, grade, email, call, assign;
 
         public ViewHolder(View itemView) {
             super(itemView);
+//            image = ( ImageView ) itemView.findViewById(R.id.image);
             name = ( TextView ) itemView.findViewById(R.id.text_name);
             grade = ( TextView ) itemView.findViewById(R.id.text_grade);
             email = ( TextView ) itemView.findViewById(R.id.text_email);

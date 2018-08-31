@@ -1,14 +1,19 @@
 package com.example.administrator.appintroduction;
 
+import android.media.Image;
+import android.widget.ImageView;
+
 public class CardItem {
-    // 이미지만 남음
+//    private int image;
     private String name;
     private String grade;
     private String email;
     private String call;
     private String assign;
 
+//    public CardItem(int image, String name, String grade, String email, String call, String assign) {
     public CardItem(String name, String grade, String email, String call, String assign) {
+//        this.image = image;
         this.name = name;
         this.grade = grade;
         this.email = email;
@@ -16,7 +21,15 @@ public class CardItem {
         this.assign = assign;
     }
 
-    public String getName(){
+//    public int getImage() {
+//        return image;
+//    }
+
+//    public void setImage(int image) {
+//        this.image = image;
+//    }
+
+    public String getName() {
         return name;
     }
 

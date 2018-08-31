@@ -32,10 +32,12 @@ public class DevelopActivity extends AppCompatActivity {
         // 표시할 임시 데이터
         List<CardItem> dataList = new ArrayList<>();
         // 예시
-        // dataList.add(new CardItem("이름", "학력", "이메일", "전화번호", "담당"));
-        // dataList.add(new CardItem("OOO", "강원대학교 전자공학전공 0학년", "oooooo@oooo.ooo", "000-0000-0000", "총괄"));
+        // dataList.add(new CardItem("이미지", "이름", "학력", "이메일", "전화번호", "담당"));
+        // dataList.add(new CardItem("본인사진", "OOO", "강원대학교 전자공학전공 0학년", "oooooo@oooo.ooo", "000-0000-0000", "총괄"));
         // 양식 준수
+//        dataList.add(new CardItem(R.drawable.app_icon_ex, getResources().getString(R.string.develop_name0), getResources().getString(R.string.develop_grade0), getResources().getString(R.string.develop_email0), getResources().getString(R.string.develop_call0), getResources().getString(R.string.develop_assign0)));
         dataList.add(new CardItem(getResources().getString(R.string.develop_name0), getResources().getString(R.string.develop_grade0), getResources().getString(R.string.develop_email0), getResources().getString(R.string.develop_call0), getResources().getString(R.string.develop_assign0)));
+//        dataList.add(new CardItem(R.drawable.app_icon_ex, getResources().getString(R.string.develop_name1), getResources().getString(R.string.develop_grade1), getResources().getString(R.string.develop_email1), getResources().getString(R.string.develop_call1), getResources().getString(R.string.develop_assign1)));
         dataList.add(new CardItem(getResources().getString(R.string.develop_name1), getResources().getString(R.string.develop_grade1), getResources().getString(R.string.develop_email1), getResources().getString(R.string.develop_call1), getResources().getString(R.string.develop_assign1)));
 
         // 어댑터 설정
