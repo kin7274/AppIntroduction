@@ -1,7 +1,10 @@
 package com.example.administrator.appintroduction;
 
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +19,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     // 메뉴 4개(텍스트뷰로 구현)
     TextView menu1, menu2, menu3, menu4;
 
+    @SuppressLint("ResourceType")
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
