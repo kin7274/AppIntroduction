@@ -24,7 +24,7 @@ import java.util.ArrayList;
 
 public class IntroActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    // TODO 확장형 리스트뷰 : 변수 이름 변경, 사이즈 조절, 내용 추가
+    // TODO 확장형 리스트뷰 :사이즈 조절, 내용 추가
     // TODO 스크롤뷰 : 처음 열면 맨 위로 올라오도록!
 
     ScrollView scrollview;
