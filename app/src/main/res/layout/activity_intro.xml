@@ -22,6 +22,7 @@
             android:textColor="#000000"
             android:textSize="20sp" />
         <TextView
+            android:id="@+id/index_11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="1.1 무엇"
@@ -46,43 +47,17 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="#000dff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="내용 시작"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
         <!--내용 시작-->
-        <TextView
+        <ExpandableListView
+            android:id="@+id/elv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="1. 당뇨그루에 대해"
-            android:textColor="#000000"
-            android:textSize="20sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="467dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/Intro_content"
-        android:textColor="#000000"
-        android:textSize="20sp" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="1.1"
-            android:textColor="#000000"
-            android:textSize="20sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="이건뭐"
-            android:textColor="#000000"
-            android:textSize="20sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="1.2"
-            android:textColor="#000000"
-            android:textSize="20sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="띠용"
-            android:textColor="#000000"
-            android:textSize="20sp"/>
+            android:layout_height="800dp"
+            android:groupIndicator="@null"/>
     </LinearLayout>
 </ScrollView>
