@@ -14,36 +14,36 @@ import java.util.ArrayList;
 public class MyAdapter extends BaseExpandableListAdapter {
 
     private Context mContext;
-    private ArrayList<Position> position;
+    private ArrayList<Index> index;
     private LayoutInflater inflater;
 
     //class Constructor
-    public MyAdapter (Context mContext, ArrayList<Position> position) {
+    public MyAdapter (Context mContext, ArrayList<Index> index) {
 
         this.mContext = mContext;
-        this.position = position;
+        this.index = index;
         inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
     @Override
     public int getGroupCount() {
-        return position.size();
+        return index.size();
     }
 
     @Override
     public int getChildrenCount(int groupPosition) {
-        return position.get(groupPosition).players.size();
+        return index.get(groupPosition).contents.size();
     }
 
     //get position
     @Override
     public Object getGroup(int groupPosition) {
-        return position.get(groupPosition);
+        return index.get(groupPosition);
     }
 
     //this is where we get the information of player
     @Override
     public Object getChild(int groupPosition, int childPosition) {
-        return position.get(groupPosition).players.get(childPosition);
+        return index.get(groupPosition).contents.get(childPosition);
     }
 
     //position ID
@@ -71,10 +71,10 @@ public class MyAdapter extends BaseExpandableListAdapter {
         }
 
         //get position
-        Position position = (Position) getGroup(groupPosition);
+        Index position = (Index) getGroup(groupPosition);
 
         //set positionName
-        String positionName = position.position;
+        String positionName = position.index;
 
         TextView textView = (TextView) convertView.findViewById(R.id.position_tv);
         textView.setText(positionName);
@@ -85,8 +85,6 @@ public class MyAdapter extends BaseExpandableListAdapter {
         } else {
             imageView.setImageResource(R.drawable.ic_keyboard_arrow_up_black_24dp);
         }
-
-        convertView.setBackgroundColor(Color.GRAY);
         return convertView;
     }
 
@@ -106,17 +104,17 @@ public class MyAdapter extends BaseExpandableListAdapter {
         name.setText(child);
 
         //get position name
-        String positionName = (String) getGroup(groupPosition).toString();
-        if (positionName == "목차1.1은 무엇") {
+        String indexName = (String) getGroup(groupPosition).toString();
+        if (indexName == "목차1.1은 무엇") {
             if (child == "1.1의 내용은1111111111111") {
             }
-        } else if (positionName == "목차1.2은 무엇") {
+        } else if (indexName == "목차1.2은 무엇") {
             if (child == "1.2의 내용은1111111111111") {
             }
-        } else if (positionName == "목차1.3은 무엇") {
+        } else if (indexName == "목차1.3은 무엇") {
             if (child == "1.3의 내용은1111111111111") {
             }
-        } else if (positionName == "목차1.4은 무엇") {
+        } else if (indexName == "목차1.4은 무엇") {
             if (child == "1.4의 내용은1111111111111") {
             }
         }
