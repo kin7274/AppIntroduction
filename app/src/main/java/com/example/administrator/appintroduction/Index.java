@@ -1,18 +1,17 @@
 package com.example.administrator.appintroduction;
 
 import java.util.ArrayList;
-
+// 뷰
 public class Index {
     public String index;
     public ArrayList<String> contents = new ArrayList<String>();
 
-    public Index(String index){
+    public Index(String index) {
         this.index = index;
     }
 
-    public String toString () {
+    public String toString() {
         return index;
     }
-
 }
 
