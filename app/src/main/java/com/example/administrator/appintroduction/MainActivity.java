@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         menu2 = ( TextView ) findViewById(R.id.menu2);
         menu3 = ( TextView ) findViewById(R.id.menu3);
         menu4 = ( TextView ) findViewById(R.id.menu4);
-        menu1.setOnClickListener(this);
-        menu2.setOnClickListener(this);
-        menu3.setOnClickListener(this);
-        menu4.setOnClickListener(this);
+//        menu1.setOnClickListener(this);
+//        menu2.setOnClickListener(this);
+//        menu3.setOnClickListener(this);
+//        menu4.setOnClickListener(this);
     }
 
     // 메뉴 4개(텍스트뷰) 클릭 이벤트
