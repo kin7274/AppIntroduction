@@ -35,7 +35,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/grade"
+            android:text="소 속"
             android:textColor="#000000"
             android:textSize="15sp" />
 
@@ -51,7 +51,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:src="@drawable/ic_call_black_24dp" />
+            android:src="@drawable/ic_computer_black_24dp" />
 
         <TextView
             android:layout_width="match_parent"
