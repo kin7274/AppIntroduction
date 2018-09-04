@@ -38,7 +38,6 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
         setContentView(R.layout.activity_intro);
 
         scrollview = ( ScrollView ) findViewById(R.id.scrollview);
-        // 이거 왜 안먹히지??
         scrollview.smoothScrollTo(0, 0);
         // 맨 끝까지 스크롤 시키기
         scrollview.fullScroll(ScrollView.FOCUS_DOWN);
@@ -140,14 +139,8 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
         Index p5 = new Index("2-4. 신체활동");
         p5.contents.add("띠용");
 
-        Index p6 = new Index("3. 기대효과");
+        Index p6 = new Index("2-5. 혈당계");
         p6.contents.add("띠용");
-
-        Index p7 = new Index("4. 개발방향");
-        p7.contents.add("띠용");
-
-        Index p8 = new Index("5. 도움주신분");
-        p8.contents.add("띠용");
 
         ArrayList<Index> allposition = new ArrayList<>();
         allposition.add(p1);
@@ -156,8 +149,6 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
         allposition.add(p4);
         allposition.add(p5);
         allposition.add(p6);
-        allposition.add(p7);
-        allposition.add(p8);
         return allposition;
     }
 

@@ -67,29 +67,7 @@
             android:text="2-4. 신체활동"
             android:textColor="#000000"
             android:textSize="20sp" />
-            <TextView
-                android:id="@+id/index_no3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="3. 기대효과"
-                android:textColor="#000000"
-                android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/index_no4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="4. 개발방향"
-                android:textColor="#000000"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/index_no5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="5. 도움주신분"
-                android:textColor="#000000"
-                android:textSize="20sp" />
         <!--목차 끝-->
         <View
             android:layout_width="match_parent"
