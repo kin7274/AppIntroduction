@@ -28,14 +28,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         // 툴바
-        Toolbar mytoolbar = ( Toolbar ) findViewById(R.id.my_toolbar);
+        Toolbar mytoolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(mytoolbar);
         getSupportActionBar().setTitle("");
 
-        menu1 = ( TextView ) findViewById(R.id.menu1);
-        menu2 = ( TextView ) findViewById(R.id.menu2);
-        menu3 = ( TextView ) findViewById(R.id.menu3);
-        menu4 = ( TextView ) findViewById(R.id.menu4);
+        menu1 = (TextView) findViewById(R.id.menu1);
+        menu2 = (TextView) findViewById(R.id.menu2);
+        menu3 = (TextView) findViewById(R.id.menu3);
+        menu4 = (TextView) findViewById(R.id.menu4);
         menu1.setOnClickListener((View.OnClickListener) this);
         menu2.setOnClickListener((View.OnClickListener) this);
         menu3.setOnClickListener((View.OnClickListener) this);

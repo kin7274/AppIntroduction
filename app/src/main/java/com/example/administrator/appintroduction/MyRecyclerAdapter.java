@@ -78,17 +78,17 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Vi
     // 반드시 RecyclerView.ViewHolder를 상속해야 함
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-//        ImageView image;
+        //        ImageView image;
         TextView name, grade, email, call, assign;
 
         public ViewHolder(View itemView) {
             super(itemView);
 //            image = ( ImageView ) itemView.findViewById(R.id.image);
-            name = ( TextView ) itemView.findViewById(R.id.text_name);
-            grade = ( TextView ) itemView.findViewById(R.id.text_grade);
-            email = ( TextView ) itemView.findViewById(R.id.text_email);
-            call = ( TextView ) itemView.findViewById(R.id.text_call);
-            assign = ( TextView ) itemView.findViewById(R.id.text_assign);
+            name = (TextView) itemView.findViewById(R.id.text_name);
+            grade = (TextView) itemView.findViewById(R.id.text_grade);
+            email = (TextView) itemView.findViewById(R.id.text_email);
+            call = (TextView) itemView.findViewById(R.id.text_call);
+            assign = (TextView) itemView.findViewById(R.id.text_assign);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

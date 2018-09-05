@@ -1,6 +1,7 @@
 package com.example.administrator.appintroduction;
 
 import java.util.ArrayList;
+
 // 뷰
 public class Index {
     public String index;

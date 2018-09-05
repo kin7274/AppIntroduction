@@ -22,7 +22,7 @@ public class MyAdapter extends BaseExpandableListAdapter {
 
         this.mContext = mContext;
         this.index = index;
-        inflater = ( LayoutInflater ) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
@@ -67,13 +67,13 @@ public class MyAdapter extends BaseExpandableListAdapter {
             convertView = inflater.inflate(R.layout.parent_list, null);
         }
 
-        Index position = ( Index ) getGroup(groupPosition);
+        Index position = (Index) getGroup(groupPosition);
         String positionName = position.index;
 
-        TextView textView = ( TextView ) convertView.findViewById(R.id.position_tv);
+        TextView textView = (TextView) convertView.findViewById(R.id.position_tv);
         textView.setText(positionName);
 
-        ImageView imageView = ( ImageView ) convertView.findViewById(R.id.indicator);
+        ImageView imageView = (ImageView) convertView.findViewById(R.id.indicator);
         if (isExpanded) {
             imageView.setImageResource(R.drawable.ic_keyboard_arrow_down_black_24dp);
         } else {
@@ -89,12 +89,12 @@ public class MyAdapter extends BaseExpandableListAdapter {
             convertView = inflater.inflate(R.layout.child_list, null);
         }
 
-        String child = ( String ) getChild(groupPosition, childPosition);
+        String child = (String) getChild(groupPosition, childPosition);
 
-        TextView name = ( TextView ) convertView.findViewById(R.id.name_tv);
+        TextView name = (TextView) convertView.findViewById(R.id.name_tv);
         name.setText(child);
 
-        String indexName = ( String ) getGroup(groupPosition).toString();
+        String indexName = (String) getGroup(groupPosition).toString();
         return convertView;
     }
 

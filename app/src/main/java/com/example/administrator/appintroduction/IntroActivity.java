@@ -28,7 +28,7 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
     // TODO 스크롤뷰 : 처음 열면 맨 위로 올라오도록!
 
     ScrollView scrollview;
-    TextView index_no1, index_no2_1, index_no2_2, index_no2_3, index_no2_4, index_no3, index_no4, index_no5;
+    TextView index_no1, index_no2_1, index_no2_2, index_no2_3, index_no2_4, index_no2_5;
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -37,7 +37,7 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
 
-        scrollview = ( ScrollView ) findViewById(R.id.scrollview);
+        scrollview = (ScrollView) findViewById(R.id.scrollview);
         scrollview.smoothScrollTo(0, 0);
         // 맨 끝까지 스크롤 시키기
         scrollview.fullScroll(ScrollView.FOCUS_DOWN);
@@ -46,14 +46,12 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
         scrollview.setHorizontalScrollBarEnabled(true);
 //        scrollview.setNestedScrollingEnabled(false);
 
-        index_no1 = ( TextView ) findViewById(R.id.index_no1);
-        index_no2_1 = ( TextView ) findViewById(R.id.index_no2_1);
-        index_no2_2 = ( TextView ) findViewById(R.id.index_no2_2);
-        index_no2_3 = ( TextView ) findViewById(R.id.index_no2_3);
-        index_no2_4 = ( TextView ) findViewById(R.id.index_no2_4);
-        index_no3 = ( TextView ) findViewById(R.id.index_no3);
-        index_no4 = ( TextView ) findViewById(R.id.index_no4);
-        index_no5 = ( TextView ) findViewById(R.id.index_no5);
+        index_no1 = (TextView) findViewById(R.id.index_no1);
+        index_no2_1 = (TextView) findViewById(R.id.index_no2_1);
+        index_no2_2 = (TextView) findViewById(R.id.index_no2_2);
+        index_no2_3 = (TextView) findViewById(R.id.index_no2_3);
+        index_no2_4 = (TextView) findViewById(R.id.index_no2_4);
+        index_no2_5 = (TextView) findViewById(R.id.index_no2_5);
 
         index_no2_1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,28 +81,15 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
             }
         });
 
-        index_no3.setOnClickListener(new View.OnClickListener() {
+        index_no2_5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "띠용3", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "띠용25", Toast.LENGTH_LONG).show();
             }
         });
 
-        index_no4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "띠용4", Toast.LENGTH_LONG).show();
-            }
-        });
 
-        index_no5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "띠용5", Toast.LENGTH_LONG).show();
-            }
-        });
-
-        ExpandableListView elv = ( ExpandableListView ) findViewById(R.id.elv);
+        ExpandableListView elv = (ExpandableListView) findViewById(R.id.elv);
 
         final ArrayList<Index> index = getData();
 
@@ -121,6 +106,7 @@ public class IntroActivity extends AppCompatActivity implements AdapterView.OnIt
             }
         });
     }
+
     //add and get data for list
     private ArrayList<Index> getData() {
 

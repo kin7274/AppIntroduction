@@ -4,14 +4,14 @@ import android.media.Image;
 import android.widget.ImageView;
 
 public class CardItem {
-//    private int image;
+    //    private int image;
     private String name;
     private String grade;
     private String email;
     private String call;
     private String assign;
 
-//    public CardItem(int image, String name, String grade, String email, String call, String assign) {
+    //    public CardItem(int image, String name, String grade, String email, String call, String assign) {
     public CardItem(String name, String grade, String email, String call, String assign) {
 //        this.image = image;
         this.name = name;
